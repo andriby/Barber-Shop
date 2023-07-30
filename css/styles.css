@@ -1,0 +1,118 @@
+/*FONTS*/
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Condensed&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*BEGIN GLOBAL*/
+
+body{
+    background-color: #1b1b1b;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+/* Estilos para el contenedor del texto */
+h2 {
+    position: relative;
+    text-align: center; /* Ajusta el centrado del texto */
+  }
+
+  h3{
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  /* Estilos para el pseudo-elemento ::after */
+  h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 75%; /* Posiciona el pseudo-elemento debajo del contenido del contenedor */
+    left: 50%; /* Centra horizontalmente el pseudo-elemento */
+    transform: translateX(-50%) translateY(10px); /* Desplaza el pseudo-elemento hacia abajo con un margen de 10 píxeles */
+    width: 120px; /* Ajusta el ancho de la imagen */
+    height: 36px; /* Ajusta la altura de la imagen */
+    background-image: url(../img/separator.png); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+  }
+  
+  
+  
+
+/*END GLOBAL*/
+
+/*BEGIN HEADER*/
+
+header{
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*BEGIN NAVBAR*/
+
+.navbar-brand{
+    height: 5rem;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0.9;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+.border{
+    border-color: #1b1b1b;
+}
+
+/*END NAVBAR*/
+
+h1.title-header{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*END HEADER*/
+
+/*BEGIN WE*/
+
+#we{
+    background-color: #d2ac7f;
+}
+
+#we img{
+    height: 15rem;
+}
+
+/*END WE*/
+
+/*BEGIN GALLERY*/
+
+/*END GALLERY*/
+
+/*BEGIN SERVICES*/
+
+
+.card{
+    transition: all .2s;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+a.btn-outline-dark{
+    background-color: #ffefdd;
+}
+
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: all .4s;
+}
+
+/*END SERVICES*/
+
+/*BEGIN FOOTER*/
+
+#footer p, #footer ul li a, #footer h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*END FOOTER*/
