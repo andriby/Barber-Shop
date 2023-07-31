@@ -3,23 +3,29 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Condensed&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /*BEGIN GLOBAL*/
 
 body{
     background-color: #1b1b1b;
-    font-family: 'Roboto Condensed', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Estilos para el contenedor del texto */
+
 h2 {
     position: relative;
     text-align: center; /* Ajusta el centrado del texto */
-  }
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
-  h3{
+h3{
     font-family: 'Noto Sans', sans-serif;
-  }
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
   
   /* Estilos para el pseudo-elemento ::after */
   h2::after {
@@ -76,6 +82,7 @@ h1.title-header{
 
 #we{
     background-color: #d2ac7f;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
 }
 
 #we img{
@@ -95,6 +102,12 @@ h1.title-header{
     transition: all .2s;
     background-color: #f0f0f0;
     border: none;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.card img{
+    border-top-right-radius: 10%;
 }
 
 a.btn-outline-dark{
@@ -105,9 +118,27 @@ a.btn-outline-dark{
 .card:hover{
     transform: translateY(-5px);
     transition: all .4s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
 }
 
 /*END SERVICES*/
+
+/*BEGIN CONTACT*/
+
+#contact .container{
+    padding: 6rem 2rem;
+}
+
+#contact{
+    margin: 3rem 0;
+    border-top: #d2ac7f 1px solid;
+    border-bottom: #d2ac7f 1px solid;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+
+/*END CONTACT*/
 
 /*BEGIN FOOTER*/
 
